@@ -1,0 +1,77 @@
+/* about */
+
+li{
+    list-style: circle;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin-bottom: 5rem;
+}
+
+.iconos {
+    height: 10rem;
+    width: 10rem;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.informacion h3,
+h2 {
+    margin-bottom: 0rem;
+}
+
+
+.certificado {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 16rem;
+}
+
+
+@media (min-width: 768px) {
+
+    .idiomas {
+        grid-column: 3 / 4;
+    }
+
+    .habilidades {
+        grid-column: 3 / 4;
+    }
+
+    .experiencia {
+        grid-column: 2 / 3;
+        grid-row:  1 / 3;
+    }
+
+    .informacion {
+        display: grid;
+        align-items: start;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 4rem;
+    }
+
+    .about {
+        grid-column: 1 / 2;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
